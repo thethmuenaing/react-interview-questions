@@ -24,7 +24,10 @@ const Coding02 = () => {
 		setIsVisible(!isVisible);
 		setName("Nishant");
 		setArray([...array, { name: "Thet", age: 21 }]);
-		setObject("");
+		setObject({
+			name: "Naing",
+			age: 21,
+		});
 	};
 	return (
 		<div>
@@ -42,9 +45,11 @@ const Coding02 = () => {
 					</div>
 				))}
 			</h1>
-			<h1>
-				{object.name} {object.age}
-			</h1>
+			{object && (
+				<h1>
+					change object {object.name} {object.age}
+				</h1>
+			)}
 
 			<h1>{count}</h1>
 			<button
