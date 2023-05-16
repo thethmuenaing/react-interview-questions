@@ -1,9 +1,9 @@
-import Coding05 from "./comments/Coding05";
+import Coding06 from "./comments/Coding06";
 
 function App() {
 	return (
 		<div className="w-[75%] mx-auto mt-32">
-			<Coding05 />
+			<Coding06 />
 		</div>
 	);
 }
